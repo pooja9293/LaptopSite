@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom SCSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+5l8u5F7f5/KT5Pvz5Z7C5qN5g6VJZ3z3BpTzGbb4b2lkSBE" crossorigin="anonymous">
+
+    <title>Product Landing Page</title>
+</head>
+<style>
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    #one {
+        background-image: url("li.jpg");
+        background-size: cover;
+        /* This will cover the entire container */
+        background-repeat: no-repeat;
+        /* Prevent repeating of the background */
+        width: 100%;
+        /* Set the width to 100% of the container */
+        height: 600px;
+        /* Set the height to your desired value */
+    }
+
+    .wrapper {
+        background-image: url("real.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* Optional: Keep the background fixed while scrolling */
+    }
+
+    /* Add this CSS to your stylesheet */
+    .scrolling-container {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .scrolling-wrapper {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .image-item {
+        display: inline-block;
+        margin-right: 10px;
+        /* Adjust the spacing between images */
+    }
+
+    .boxed-container {
+        background-color: rgb(114, 113, 113);
+        /* Background color of the container */
+        padding: 50px;
+        /* Padding around the heading and container */
+        text-align: center;
+        /* Center-align the content */
+        color: #c6c3c3;
+        /* Text color */
+    }
+
+    .boxed-heading {
+        display: inline-block;
+        /* To make the box size fit the content */
+    }
+
+    #on {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: antiquewhite;
+    }
+
+    .main-container {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .left-side {
+        float: left;
+        /* Float the element to the left */
+        margin-right: 20px;
+        /* Add some margin to create space between it and the current position */
+    }
+
+
+
+    /* Additional styles for the "About Us" section */
+    .about-us-section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .custom-line {
+        border: none;
+        /* Remove default border */
+        height: 2px;
+        /* Set the height of the line */
+        background-color: #fff;
+        /* Background color (line color) */
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Additional styles for footer links (customize as needed) */
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"
+                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lenovo Ideapad
+                Gaming 3 Laptop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"
+                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specification">Specifications</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#buy">Buy Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container">
+            <h1 id="one"></h1>
+            <hr class="custom-line">
+            <div id="specification" class="mt-5">
+                <div class="container">
+                    <div class="left-side" style=" float: right;">
+                        <img src="lll.webp" alt="Image 5" width="500" height="400">
+
+                    </div>
+                    <div class="container">
+                        <div class="left-side" style="margin-right: 200px;">
+                            <img src="wFI.png" alt="Image 1" width="100" height="100">
+                            <p
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">
+                                Uninterrupted WI-FI <br>connections</p>
+                        </div>
+                        <div class="left-side">
+                            <img src="cpu1.jpeg" alt="Image 2" width="100" height="100">
+                            <p
+                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">
+                                Boost frame rates <br>with Intel® Turbo <br>Boost Technology</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- New line of images -->
+                <br><br><br><br><br><br><br><br><br>
+                <div class="container">
+                    <div class="left-side" style="display: inline-block; margin-right: 230px;">
+                        <img src="thu.png" alt="Image 3" width="100" height="100">
+                        <p
+                            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">
+                            Thuderbolt for <br>fast and universal <br>connection</p>
+                    </div>
+                    <div class="left-side">
+                        <img src="intel.png" alt="Image 4" width="100" height="100"><br>
+                        <p
+                            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">
+                            Optimize workloads <br>with Intel® Thread <br>Director2
+                            Boost frame <br>rates with Intel</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <!-- Video Link -->
+            <div>
+
+                <div class="mb-4  d-flex justify-content-center align-items-center">
+
+                    <!-- Replace the "YOUR_VIDEO_LINK_HERE" with your actual video link -->
+                    <iframe width="1000" height="400"
+                        src="https://www.youtube.com/embed/_3lt6XqXSgc?si=fg9SzAXblUcMelGp" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="on">
+                <center>
+                    <br><br>
+                    <h1>See EPIC</h1>
+                    <h1>Lenovo TrueLife+ Display</h1><br><br>
+                    <h5>Lenovo TrueLife+ Display brings breakthrough display technology to create the perfect
+                        viewing experience across text, images, and videos.</h5><br><br>
+                    <h2 style="color: goldenrod;"> 3.2K Resolution: 3x Full HD</h2>
+                    <img src="p.jpg" alt="Image1" width="700" height="450"><br><br>
+                    <h2>89.1%
+                        Screen to Body Ratio <br>
+                        16:10
+                        Aspect Ratio</h2><br><br>
+                    <h2 style="color: goldenrod;">Millions of Pixels, Billions of Colours</h2>
+                    <br><br>
+                    <div class="main-container">
+                        <h4>Every colour has a place on this piece of technology. With 100%
+                            sRGB Wide
+                            Colour Gamut, Mi NoteBook Ultra redefines your viewing experience.</h4>
+                    </div>
+                    <br><br>
+                    <img src="b.png" alt="Image3" width="700" height="350"><br><br>
+                    <h2 style="color: goldenrod;">Eye Safe and Flicker Free</h2>
+                    <br>
+                    <div class="main-container">
+                        <h4>The hardware level TUV Rheinland Low Blue Light protection filters blue light
+                            without affecting the colour accuracy of the display. DC dimming ensures
+                            minimum flicker resulting in reduced eye fatigue.</h4>
+                        <br><br>
+                        <br>
+                        <center>
+                            <div>
+
+                                <h2 style="font-weight: 500;color: goldenrod;">
+                                    Thunderbolt 4
+                                    and Type C USB Future-Proof Universal Connectivity</h2>
+
+                                <img src="side.webp" alt="SIDE VIEW" width="500" height="450">
+                                <h4
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: white;">
+                                    Thunderbolt 4 and Type C USB Future-Proof Universal Connectivity
+                                    Thunderbolt 4 opens up a world of high speed connectivity and
+                                    data transfer technologies with up to 40 Gbps bandwidth.
+                                    Connect up to two 4K or one 8K external monitors.It also supports eGPU and charging.
+                                    Type-C brings universal connectivity across charging and data transmission.
+                                </h4>
+                            </div>
+                            <br><br><br>
+                            <div class="boxed-container">
+                                <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: black;"
+                                    class="boxed-heading">
+                                    OS & WINDOWS</h2><br>
+                            </div>
+                            <a href="https://www.lenovo.com/us/en/faqs/windows-faqs/new-windows-10-features/?orgRef=https%253A%252F%252Fwww.google.com%252F"
+                                style="font-size: 35px;color: goldenrod;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><img
+                                    src="win.jpg" alt="WINDOWS" width="500px" height="300px"></a>
+                    </div>
+
+                </center>
+            </div>
+
+            <br><br><br>
+            <div id="three">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="scrolling-container">
+                                <div class="scrolling-wrapper">
+                                    <div class="image-item">
+                                        <img src="img7.jpeg" alt="Image 3" class="img-fluid">
+                                    </div>
+                                    <div class="image-item">
+                                        <img src="img4.jpeg" alt="Image 3" class="img-fluid">
+                                    </div>
+                                    <div class="image-item">
+                                        <img src="img3.jpeg" alt="Image 3" class="img-fluid">
+                                    </div>
+                                    <div class="image-item">
+                                        <img src="img6.jpeg" alt="Image 3" class="img-fluid">
+                                    </div>
+                                    <!-- Add more images here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+            </center>
+            <center>
+                <div id="buy" class="mt-5">
+                    <h2
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: goldenrod;font-size: larger;font-weight: 200;">
+                        Buy Now</h2>
+                    <p
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: aliceblue;">
+                        Click the button below to purchase our product.</p>
+                    <a href="https://www.amazon.com/Lenovo-Ideapad-GeForce-Backlit-Mousepad/dp/B0C9ZSJLDL/ref=sr_1_1_sspa?crid=388VRLODS4NU2&keywords=lenovo%2Bideapad%2Bgaming%2B3&qid=1696533852&sprefix=lenovo%2Bidea%2Caps%2C375&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+                        style="background-color: #000; color: #fff; padding: 10px 20px; text-decoration: none;"
+                        class="btn btn-primary">Buy Now</a>
+                </div>
+
+            </center>
+            <section id="about" class="about-us-section">
+                <b>
+                    <h2
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: #fff;font-size: large;color: goldenrod;">
+                        About Us</h2>
+                </b>
+                <p
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 30;color: white;">
+                    Welcome to our
+                    website! We are a team of dedicated professionals.</p>
+                <a href="https://www.lenovo.com/in/en/contact?orgRef=https%253A%252F%252Fwww.google.com%252F">
+                    <img src="con.jpg" alt="contact" height="200px"></a>
+        </div>
+
+    </div>
+    <footer>
+        <div>
+            <p>&copy; 2023 MYWEB</p>
+        </div>
+        <div>
+            <a href="#specification">Home</a>
+            <a href="#about">About</a>
+            <a href="#three">Services</a>
+            <a href="#about">Contact</a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

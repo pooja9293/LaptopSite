@@ -1,0 +1,39 @@
+/* styles.scss */
+.navbar {
+    background-color: #f8f9fa;
+    /* Light background color for the navbar */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    /* Adjust the font size for the product name */
+}
+
+.container {
+    max-width: 800px;
+    /* Adjust the maximum width of the content container */
+}
+
+/* Custom styling for sections (optional) */
+#specification,
+#price,
+#buy {
+    border: 1px solid #ddd;
+    /* Add a border to separate sections */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    /* White background for sections */
+}
+
+.btn-primary {
+    background-color: #000;
+    /* Blue color for the Buy Now button */
+    border-color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #000;
+    /* Darker blue color on hover */
+    border-color: #fff;
+}
